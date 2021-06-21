@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin:0;padding: 0;}
+        ul{list-style: none;opacity: 1;}
+        /*1.先将整个div固定在右边*/
+        .con{
+            position: fixed;
+            right: 0;
+            /*background-color: white;*/
+        }
+        a{
+            text-decoration: none;
+            background-color: #CCC;
+            /*给a设置宽高，以及将元素转换成块元素*/
+            width:70px;
+            height: 40px;
+            color: grey;
+            display: block;
+
+        }
+        ul li a:hover{
+            background-color: white;
+            color: black;
+        }
+        ul li{
+            /*2.设置左浮动，使ul列表从竖向显示转成横向显示*/
+            float: left;
+            /*并使文字居中*/
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+
+
+        }
+        ul li ul li{
+            /*清除子导航条的左浮动重回上下排列*/
+            float: none;
+            background-color: black;
+        }
+        ul li ul{
+            /*使子导航条在初始情况下不显示*/
+            display: none;
+        }
+        .dht{width:35px;height: 35px;}
+        .con{
+            background-color: transparent;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function (argument) {
+            $("ul>li").mouseover(function(event) {
+                $(this).children('ul').show();
+                $(this).siblings('ul').children('ul').hide();
+            });
+            $("ul>li").mouseout(function(event) {
+                $(this).children('ul').hide();
+    
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="con">
+        <ul>
+            <li><a href="搜索框设计（css+js）/index.html">搜索</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">杂文</a>
+                <ul> 
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">技术分享</a>
+                <ul> 
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">服务器</a></li>
+                    <li><a href="#">云计算</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li><a href="#">娱乐</a>
+                <ul> 
+                    <li><a href="https://music.163.com/">音乐</a></li>
+                    <li><a href="https://movie.douban.com/">电影</a></li>
+                    <li><a href="#">相册</a></li>
+                    <li><a href="#">说说</a></li>
+                    <li><a href="#">好友动态</a></li>
+                </ul>
+            </li>
+            <li><a href="#">留言板</a>
+                <ul> 
+                    <li><a href="#">心情随笔</a></li>
+                </ul>
+            </li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+</body>
+</html>

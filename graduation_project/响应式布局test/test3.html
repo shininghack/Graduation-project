@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .nav {
+                position: relative;
+                background-color: #fff;
+                height: 78px;
+                width: 100%;
+                border-bottom: 1px solid #DADADA;
+            }
+            
+            .nav img {
+                position: absolute;
+                right: 20px;
+                top: 30px;
+                width: 28px;
+                display: none;
+            }
+            
+            .nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .nav ul li {
+                height: 78px;
+                width: 168px;
+                line-height: 78px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+            .nav ul li:hover {
+                cursor: pointer;
+            }
+            
+            .nav ul li a {
+                text-decoration: none;
+                color: #666;
+                padding-bottom: 8px;
+            }
+            
+            .nav ul li .actived {
+                border-bottom: 3px solid #EE5C42;
+            }
+           
+        @media only screen and (max-width: 878px) {
+                .nav img {
+                    display: inline;
+                }
+                .nav ul {
+                    position: absolute;
+                    right: 0;
+                    text-align: right;
+                    top: 78px;
+                    display: none;
+                }
+                .nav ul li {
+                    display: block;
+                    border: 1px solid #dadada;
+                    height: 58px;
+                    line-height: 58px;
+                    width: 98px;
+                }
+                .nav ul li a {
+                    display: block;
+                    padding-bottom: 0;
+                }
+                .nav ul li .actived {
+                    border-bottom: none;
+                }
+                .nav ul li a:hover {
+                    background-color: #6E6E6E;
+                    color: #fff;
+                }
+            }
+    </style>
+</head>
+<script src="jquery-1.5.1.js"></script>
+<script>
+    $(function() {
+        $(".nav ul li").click(function() {//导航点击
+            $(".nav ul li a").removeClass("actived");
+            $(this).children("a").addClass("actived");
+        });
+        $(".nav img").click(function() {//显示或隐藏下方导航列表
+                    $(".nav ul").slideToggle(100);
+                });
+    });
+</script>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#" class="actived">网站首页</a>
+            </li>
+            <li>
+                <a href="#">公司案例</a>
+            </li>
+            <li>
+                <a href="#">公司相册</a>
+            </li>
+            <li>
+                <a href="#">团队博客</a>
+            </li>
+            <li>
+                <a href="#">关于我们</a>
+            </li>
+        </ul>
+        <img src="菜单.png" />
+    </div>
+
+</body>
+</html>

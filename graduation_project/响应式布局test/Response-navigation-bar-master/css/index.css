@@ -1,0 +1,214 @@
+ /*大屏或者超大屏显示*/
+ 
+ @media screen and (min-width: 992px) {
+     html,
+     body {
+         margin: 0px;
+         padding: 0px;
+     }
+     .navbar-container {
+         width: 100%;
+         background-color: rgba(255, 160, 0, 1);
+         padding: 0 20px;
+     }
+     /*左边图标和logo*/
+     .navbar-left {
+         display: inline-block;
+         text-align: center;
+         margin: 20px 0px;
+         margin-left: 25px;
+     }
+     .navbar-left .img1 {
+         height: 35px;
+     }
+     .navbar-left .img2 {
+         height: 35px;
+     }
+     /*导航菜单*/
+     .navbar-list {
+         display: inline-block;
+         list-style-type: none;
+         text-align: center;
+         margin: 0px;
+         padding: 0px;
+         position: relative;
+         bottom: 10px;
+         margin-left: 15px;
+     }
+     .navbar-list .navbar-item {
+         display: inline-block;
+         margin: 0 20px;
+     }
+     .navbar-list .navbar-item a {
+         display: inline-block;
+         padding: 0px 5px 8px 5px;
+         color: #fff;
+         text-decoration: none;
+     }
+     .navbar-list .navbar-item a:hover {
+         border-bottom: 3px solid black;
+     }
+     /*搜索框*/
+     .navbar-search {
+         display: inline-block;
+         position: relative;
+         bottom: 10px;
+         margin-left: 45px;
+     }
+     .navbar-search .search {
+         padding: 6px 12px;
+         font-size: 14px;
+         color: #555;
+         background-color: #fff;
+         background-image: none;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+     }
+     .navbar-search .search-btn {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+         position: relative;
+         top: 2px;
+     }
+     .navbar-search .search-btn:hover {
+         cursor: pointer;
+     }
+     /*登录注册*/
+     .navbar-sign {
+         display: inline-block;
+         position: relative;
+         bottom: 10px;
+         left: 125px;
+     }
+     .navbar-sign button {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+         position: relative;
+         top: 2px;
+     }
+     .navbar-sign button:hover {
+         cursor: pointer;
+     }
+     /*更多按钮*/
+     /*大屏隐藏*/
+     .navbar-morebox {
+         display: none;
+     }
+     #small-list {
+         display: none;
+     }
+ }
+ /*小屏幕显示  手机屏幕 和平板*/
+ 
+ @media screen and (max-width:992px) {
+     html,
+     body {
+         margin: 0px;
+         padding: 0px;
+     }
+     .navbar-container {
+         width: 100%;
+         background-color: rgba(255, 160, 0, 1);
+         padding: 0 20px;
+         text-align: center;
+     }
+     /*左边图标和logo*/
+     .navbar-left {
+         display: inline-block;
+         text-align: center;
+         margin: 20px 0px;
+         margin-right: 50px;
+     }
+     .navbar-left .img1 {
+         height: 35px;
+     }
+     .navbar-left .img2 {
+         height: 35px;
+     }
+     /*导航菜单*/
+     .navbar-list {
+         display: none;
+     }
+     /*搜索框*/
+     .navbar-search {
+         display: none;
+     }
+     /*登录注册*/
+     .navbar-sign {
+         display: none;
+     }
+     .navbar-morebox {
+         display: inline-block;
+         margin-right: 20px;
+     }
+     .more-btn {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+     }
+     .more-btn:hover {
+         cursor: pointer;
+     }
+     .more-btn img {
+         width: 25px;
+         height: 25px;
+     }
+     .small-list {
+         display: none;
+         width: 100%;
+         background-color: rgba(255, 160, 0, 1);
+         margin: 0px;
+         padding: 0px;
+         position: relative;
+         top: 1px;
+         list-style-type: none;
+         text-align: center;
+     }
+     .small-list .small-item {
+         width: 100%;
+         padding: 8px;
+         border-bottom: 1px solid #fff;
+     }
+     .small-list .small-item a {
+         color: #fff;
+         text-decoration: none;
+     }
+     .small-list .small-item .search {
+         padding: 6px 12px;
+         font-size: 14px;
+         color: #555;
+         background-color: #fff;
+         background-image: none;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+     }
+     .small-list .small-item .search-btn {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+         position: relative;
+         top: 2px;
+     }
+     .small-list .small-item .sign {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+         position: relative;
+         top: 2px;
+     }
+     .small-list .small-item .sign:hover {
+         cursor: pointer;
+     }
+ }

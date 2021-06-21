@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="./1.1.html"> -->
+    <link rel="icon" type="image/png" href="../images/icon1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger</title>
+    <style type="text/css">
+        *{margin:0;padding: 0;}
+        #web-bg{
+            position: fixed;
+            z-index: -999;
+            width:100%;
+            height: 100%;
+            background: url("images/bg.jpg") ;
+            background-size: cover;
+            /* display: none; */
+        }
+        body,html{
+            color:#777;
+        }
+        a{text-decoration: none;color:#555;}
+       
+        /*导航条*/
+        
+        /*header*/
+        hr {
+            height: 1px;
+            width: 70px;
+            text-align: center;
+            position: relative;
+            background: #666;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border: 0;
+        }
+        .int{
+            display: table;
+            width:100%;
+            padding: 0;
+            text-align: center;
+            color:#333;
+            background-size: cover;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            margin-top: -120px;
+            /*background-color: #e5e5e5;*/
+           /* background: url("../images/bg.jpg" ) no-repeat center top ;*/
+            /* padding-top: 280px;
+            padding-bottom: 200px; */
+        }
+
+        .title{margin:65px auto;}
+        .cover-btn{
+       
+            text-transform: uppercase;/*定义仅大写字母*/
+            color:#555;
+            background-color: transparent;/*全透明*/
+            /*display: block;
+            width: 100px;*/
+            border:1px solid #777;
+            padding: 14px 20px;
+            margin:0;
+            font-size: 16px;
+            border-radius: 0;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .cover-btn:hover {
+            color:#fff;
+            background-color: #121d1f;
+            /*border-color: #121d1f;*/
+        }
+        /*header*/
+    /*爱心*/
+        /* .box {
+                width: 120px;
+                height: 120px;
+                background: #ff0000;
+                margin: 200px auto;
+                margin-bottom: 80px;
+                /* 盒子旋转45度 */
+                transform: rotate(45deg) scale(0.9);
+                /* 绑定动画 */
+                animation: change 1s infinite;
+                box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.7);
+            }
+    
+            .box::after,
+            .box::before {
+                content: "";
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                background: #ff0000;
+                border-radius: 50%;
+                box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.7);
+            }
+    
+            .box::after {
+                left: -68px;
+            }
+    
+            .box::before {
+                top: -68px;
+            } */
+    
+            /* 创建动画 */
+            /* @keyframes change {
+                0% {
+                    transform: rotate(45deg) scale(0.85);
+                }
+    
+                50% {
+                    transform: rotate(45deg) scale(1);
+                }
+    
+                100% {
+                    transform: rotate(45deg) scale(0.85);
+                }
+            } */
+        /*爱心动画结束*/
+        /*下拉三角*/
+        /* .box1{text-align: center;} */
+        .down{
+            width:40px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -20px;
+        }
+        /*下拉三角结束*/
+        /*type-text*/
+        type-t{
+            height: 20px;
+            /*float: left;*/
+        }
+        span{
+            
+            /* color: black; */
+            /*display: flex;
+            align-items: center;
+            justify-content: center;*/
+            /* font-size: 20px; */
+
+        }
+        .blinking-cursor {
+            animation: blink 1s steps(2, start) infinite;
+        }
+
+        /* @keyframes blink {
+          to {
+            visibility: hidden;
+          }
+
+          .section-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: transform 1s;
+    -webkit-transition: -webkit-transform 1s
+}
+
+.section-wrap .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+        } */
+        /*type-text*/
+    </style>
+   <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function (argument) {
+            window.setInterval(function(){
+            $('.down').animate('left:250px').animate('left:-100px;');
+            },3*1000);
+            $("ul>li").mouseover(function (argument) {
+                $(this).children('ul').show();
+                $(this).siblings('ul').children('ul').hide();
+            })
+            $("ul>li").mouseout(function(event) {
+                $(this).children('ul').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- <section class="section-wrap">            -->
+    <!-- <header > -->
+        <!-- 背景图片 -->
+        <div id="web-bg">
+        <!-- 导航条 -->
+       
+        <!-- 导航条 -->
+        <!-- 中间部分 -->
+            <div class="int">
+                <h1>拾光云海</h1>
+                <hr>
+                <!-- <p>所有的温柔都源于你的强大。</p> -->
+                <div class="type-t">
+                    <span id="type-text">...</span>
+                    <span class="blinking-cursor">_</span>
+                </div>
+                <script src="type-text.js"></script>
+
+                <!--  -->
+                <div class="title">
+                    <a  class="cover-btn" href="index1.html">Come on!</a>
+                </div>
+            </div>
+            <img src="images/下拉三角 (1).png" alt="" class="down">
+            <!-- 1.箭头跳动2.点击箭头实现滑动页面 -->
+        </div>
+    <!-- </header> -->
+<!-- </section> -->
+<!-- <div class="box1">
+                <img src="../images/下拉三角 (1).png" class="arrow">
+            </div> -->
+    
+    <script type="text/javascript" src="js/wheel.min.js"></script>
+    <script type="text/javascript" src="js/wheel-core.js"></script>
+</body>
+</html>

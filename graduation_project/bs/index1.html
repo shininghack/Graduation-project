@@ -1,0 +1,940 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="./clock.css">
+<!-- 小图标 -->
+<link rel="icon" type="image/png" href="pics/卡通人像.png">
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+  *{
+      margin:0;padding: 0;
+  }  
+  a{
+      background-color:transparent;
+      text-decoration: none;
+      color:black;
+  }
+  hr {
+        height: 1px;
+        width: 70px;
+        text-align: center;
+        position: relative;
+        background: #666;
+        margin: 10px auto;
+        /*margin-bottom: 30px;*/
+        border: 0;
+  }
+  .con{
+      width: 100%;
+      max-width: 1080px;
+      margin: 50px auto;
+  }
+  .left{
+      float: left;
+  }
+  .c1,.c2,.c3,.c4,.c5{
+      width:750px;
+      height: 300px;
+      border-radius: 20px;
+      border:1px solid grey;
+      background-color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+  }
+  .c1:hover{
+      box-shadow: 0px 0px 20px #333;
+      }
+  .c1{
+      position: relative;
+
+  }
+  .c11{
+      /*position: absolute;*/
+      float: left;
+      height: 280px;
+      width: 280px;
+      border-right: 1px solid grey;
+      margin: 10px auto;
+      text-align: center;
+      display: inline-block;
+  }
+  .c11 img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.6s;
+  }
+  .c11 img:hover{
+    transform: scale(1.1);
+  }
+  .c13{
+    float: right;
+    height: 280px;
+    width: 280px;
+    border-left: 1px solid grey;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  .c12{
+    float: left;
+    height: 280px;
+    width: 460px;
+    /*position: absolute;*/
+    top:10px;
+    text-align: center;
+    margin:10px auto;
+  }
+  .c12 h2{
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  .c12 h2:hover{
+    cursor: help;
+  }
+  .c12 text{
+    height: 200px;
+    width: 460px;
+  }
+  .right{
+    float: left;
+  }
+  .produce{
+    width: 300px;
+    height: 600px;
+    border:1px solid grey;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+/*自我介绍*/
+.headd{
+  text-align: center;
+  margin-bottom: 10px; 
+}
+.tit1{
+  text-align: center;
+}
+.tit1 text{
+  display: inline-block;
+  margin-top: 5px;
+}
+.count{
+  margin-top: 20px;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+}
+.item1{
+  float: left;
+  width: 148px;
+  height: 70px;
+  border-right: 1px solid #CCC;
+  border-bottom: 2px solid #CCC;
+}
+.item2{
+  float: left;
+  width: 148px;
+  height: 70px;
+  border-left: 1px solid #CCC;
+  border-bottom: 2px solid #CCC;
+}
+.inks{
+  width: 180px;
+  height: 300px;
+  float: left;
+}
+.inks a{
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 16px;
+  margin: 7px 0 10px 50px;
+  
+}
+.inks a:hover{
+  text-decoration: underline;
+}
+.inkss{
+  width: 60px;
+  height: 300px;
+  float: left;
+}
+.inkss img{
+  width: 26px;
+  height: 26px;
+  margin: 10px 0 0 45px;
+}
+/*produce栏结束*/
+/*公告*/
+.nice{
+  width:300px;
+  height: 380px;
+  border:1px solid grey;
+  background-color: rgba(255,255,255,0.7);
+  margin-top: 15px;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.nice span{
+  padding-left: 42px;
+}
+.nice img{
+  width: 260px;
+  height: 180px;
+  padding: 30px 0 0 20px;
+}
+.tip2{
+    height: 50px;
+    width: 300px;
+    margin-left: 40px;
+    padding-top: 30px;
+    font-family:"Times New Roman",Georgia,Serif;
+    position: relative;
+  }
+  .tip2 .e1{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .tip2 .e2{
+    font-size: 22px;
+    font-weight: bold;
+  }
+/*公告结束*/
+/*notice开始*/
+  .notice{
+    width: 300px;
+    height: 400px;
+    border:1px solid grey;
+     background-color: rgba(255,255,255,0.7);
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .tip1{
+    height: 50px;
+    width: 300px;
+    margin-left: 40px;
+    padding-top: 30px;
+    font-family:"Times New Roman",Georgia,Serif;
+    position: relative;
+  }
+  .tip1 .e1{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .tip1 .e2{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  ul li {
+    list-style: none;
+  }
+  .arc{
+    width: 200px;
+    height: 280px;
+    margin: 0px 0 7px 50px;
+    
+  }
+  .arc li{
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-left: 3px solid #CCC;
+  }
+  .arc li a {
+    margin-left: 7px;
+    padding:0 8px 2px 10px;
+    
+  }
+  .arc li a:hover{
+    /*width:150px;
+    height: 30px;*/
+    display: inline-block;
+    background-color: #CCC;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 18px;
+  }
+  /**/
+  h1 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #333;
+  }
+
+  .accordion {
+    width: 100%;
+    max-width: 1080px;
+    height: 250px;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+  }
+
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .accordion ul li div a {
+    display: block;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+  }
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("https://source.unsplash.com/uYyLWm7V-9U");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("https://source.unsplash.com/LD4KsgYUjxI");
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("https://source.unsplash.com/MQFNx9pVPRQ");
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("https://source.unsplash.com/7gM1R2yLfXk");
+}
+
+.accordion ul li:nth-child(5) {
+  background-image: url("https://source.unsplash.com/jso_yKod6-c");
+}
+
+.accordion ul li:nth-child(6) {
+  background-image: url("https://source.unsplash.com/46vZtdZhWAs");
+}
+
+.accordion ul:hover li, .accordion ul:focus-within li {
+  width: 8%;
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus, .accordion ul:focus-within li:focus {
+  width: 60%;
+}
+
+.accordion ul:hover li:hover a,
+.accordion ul li:focus a, .accordion ul:focus-within li:focus a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a *,
+.accordion ul li:focus a *, .accordion ul:focus-within li:focus a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 8% !important;
+}
+
+.accordion ul:hover li a * {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 60% !important;
+}
+
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    z-index: 1;
+    height: auto;
+  }
+
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/*底部栏*/
+.footer{
+  clear:both;
+  /*position: relative;*/
+  bottom: 0;
+  background-color: transparent;
+  margin-top: 30px;
+  padding-top: 40px;
+  height: 80px;
+  text-align: center;
+}
+.about {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-size: 10 px;
+  color: white;
+}
+
+.about a {
+  /*color: rgb(144, 144, 148);*/
+  color:grey;
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+/*.about a:hover {
+  text-decoration: underline;
+}*/
+/**/
+.box {
+        width: 20px;
+        height: 20px;
+        background: #ff0000;
+        /*margin: 150px auto;*/
+        margin-bottom: 30px;
+        /* 盒子旋转45度 */
+        transform: rotate(45deg) scale(0.9);
+        /* 绑定动画 */
+        animation: change 1s infinite;
+        box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+      }
+    
+            .box::after,
+            .box::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: #ff0000;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+            }
+    
+            .box::after {
+                left: -10px;
+            }
+    
+            .box::before {
+                top: -10px;
+            }
+    
+            /* 创建动画 */
+            @keyframes change {
+                0% {
+                    transform: rotate(45deg) scale(0.85);
+                }
+    
+                50% {
+                    transform: rotate(45deg) scale(1);
+                }
+    
+                100% {
+                    transform: rotate(45deg) scale(0.85);
+                }
+            }
+    
+/**/
+</style>
+ <object style="border:0px" type="text/x-scriptlet" data="./1.1.html" width=100% height=200 >
+ </object>
+</head>
+<body>
+
+<h1>拾光云海</h1>
+<hr>
+<!-- 宣传板块 -->
+<div class="accordion">
+  <!-- 在这里需要复制6个一样的代码，并修改内容 -->
+  <ul>
+    <li tabindex="1">
+      <div>
+        <a href="#">
+          <h2>Bagel</h2>
+          <p>The harder the crust is baked, the stronger the flavor and texture of the bread inside.</p>
+        </a>
+      </div>
+    </li>
+
+    <li tabindex="2">
+      <div>
+        <a href="#">
+         <h2>Cup Cake</h2>
+         <p>Cupcake is a dessert.</p>
+        </a>
+      </div>
+    </li>
+
+    <li tabindex="3">
+      <div>
+        <a href="#">
+          <h2>Chocolate Cake</h2>
+          <p>It is commonly used in birthday parties and weddings and is one of the common desserts.</p>
+        </a>
+      </div>
+    </li>
+
+    <li tabindex="4">
+      <div>
+        <a href="#">
+          <h2>Light Food</h2>
+          <p>The cooking method of food materials is simple, and the original nutrition and taste of food materials are retained.</p>
+        </a>
+      </div>
+    </li>
+
+    <li tabindex="5">
+      <div>
+        <a href="#">
+          <h2>Sashimi</h2>
+          <p>Sashimi refers to raw fish and other things, dipped in seasoning directly edible fish dishes.</p>
+        </a>
+      </div>
+    </li>
+
+    <li tabindex="6">
+      <div>
+        <a href="#">
+          <h2>Xaman Beer</h2>
+          <p>Guatemalan handcrafted Xaman beer bottle.</p>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- 宣传板块 -->
+<!-- 中心板块 -->
+<div class="con">
+    <div class="left">
+        <div class="c1">
+          <div class="c11">
+            <img src="pics/mmm.png" alt="">
+          </div>
+          <div class="c12">
+            <h2>JS学习笔记</h2>
+            <text class="t1">2020年12月1日</text>
+            <text class="t2">& 栗子</text>
+          </div>
+        </div>
+        <div class="c2">
+          <div class="c13">
+          </div>
+          <div class="c12">
+            <h2>XXXXXX</h2>
+            <text>tsdfadfasdfasdfsdfsfasdfsdfsdfasdfsdfsadfasdfasfsdfsfsfs</text>
+          </div>
+        </div>
+        <div class="c3">
+          <div class="c11">
+          </div>
+          <div class="c12">
+            <h2>XXXXXX</h2>
+            <text>ttfasdfsdfasdfasdfasdfasdfasdfasfasfasfsfasfasdf</text>
+          </div>
+        </div>
+        <div class="c4">
+          <div class="c13">
+          </div>
+          <div class="c12">
+            <h2>XXXXXX</h2>
+            <text>tttttasdfsdfasdfasdfasdfasdfasdfasdfasdfasdfsdfttt</text>
+          </div>
+        </div>
+        <div class="c5">
+          <div class="c11">
+          </div>
+          <div class="c12">
+            <h3>XXXXXX</h3>
+            <text>tttasdfsddfsdfdfsdfdsfttttt</text>
+          </div>
+        </div>
+    </div>
+    <!-- 时钟 -->
+    <div class="right">
+        <div class="clock">
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+            <em class="divider">:</em>
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+            <em class="divider">:</em>
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+            <div class="flip">
+                <div class="digital front" data-number="0"></div>
+                <div class="digital back" data-number="1"></div>
+            </div>
+        </div>
+        <div class="produce">
+            <div class="headd">
+              <img src="pics/休息.png" alt="" style="width: 183px;height: 180px;">
+            </div>
+            <div class="tit1">
+              <h3>拾光云海</h3>
+              <text>四个普通的人er罢了</text>
+            </div>
+          
+            <div class="count">
+                <div class="item1" title="累计文章数">
+                    <h2 class="num">60</h2>
+                    <span>文章数</span>
+                </div>
+                <div class="item2" title="累计评论数">
+                    <h2 class="num">1,429</h2>
+                    <span>评论量</span>
+                </div>
+            </div>
+            
+            <div class="inks">
+                <a href="#">这是个跳转链接</a>
+                <a href="#">你点点呀。</a>
+                <a href="#">你点不点？</a>
+                <a href="#">哦，不点就算了</a>
+                <a href="#">你别点哈</a>
+            </div>
+            <div class="inkss">
+                <img src="pics/return.png" alt="">
+                <img src="pics/return.png" alt="">
+                <img src="pics/return.png" alt="">
+                <img src="pics/return.png" alt="">
+                <img src="pics/return.png" alt="">
+            </div>
+        </div>
+        <div class="nice">
+           <div class="tip2">
+            <text class="e1">A</text><text class="e2">nnouncement</text>
+          </div> 
+          <span class="zhan1">欢迎来到我们的小站~</span>
+          <img src="pics/my_bg.gif" alt="" >
+        </div>
+        <div class="notice">
+          <div class="tip1">
+            <text class="e1">A</text><text class="e2">RCHIVES</text>
+          </div>
+          <ul class="arc">
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2021</a></li>
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+          </ul>
+        </div>
+</div>
+<!-- 中心板块 -->
+
+<canvas id="canvas">  </canvas>
+
+<!-- 底部信息 -->
+<div class="footer">
+  <p class="about">
+    © 2020-2021  By  <a href="#">拾光云海</a>
+    <br/>春光复始 适常如斯 ツ
+  </p>
+</div>
+<!-- 底部信息 -->
+
+<script>
+  // 可调参数
+  var BACKGROUND_COLOR = "#9AA6B2";   // 背景颜色
+  var POINT_NUM = 100;                        // 星星数目
+  var POINT_COLOR = "rgba(255,255,255,0.7)";  // 点的颜色
+  var LINE_LENGTH = 10000;                    // 点之间连线长度(的平方)
+
+  // 创建背景画布
+  var cvs = document.createElement("canvas");
+  cvs.width = window.innerWidth;
+  cvs.height = window.innerHeight;
+  cvs.style.cssText = "\
+      position:fixed;  \
+      top:0px;         \
+      left:0px;        \
+      z-index:-1;      \
+      opacity:1.0;     \
+      ";
+  document.body.appendChild(cvs);
+
+  var ctx = cvs.getContext("2d");
+
+  var startTime = new Date().getTime();
+
+  //随机数函数
+  function randomInt(min, max) {
+      return Math.floor((max - min + 1) * Math.random() + min);
+  }
+
+  function randomFloat(min, max) {
+      return (max - min) * Math.random() + min;
+  }
+
+  //构造点类
+  function Point() {
+      this.x = randomFloat(0, cvs.width);
+      this.y = randomFloat(0, cvs.height);
+
+      var speed = randomFloat(0.3, 1.4);
+      var angle = randomFloat(0, 2 * Math.PI);
+
+      this.dx = Math.sin(angle) * speed;
+      this.dy = Math.cos(angle) * speed;
+
+      this.r = 1.2;
+
+      this.color = POINT_COLOR;
+  }
+
+  Point.prototype.move = function () {
+      this.x += this.dx;
+      if (this.x < 0) {
+          this.x = 0;
+          this.dx = -this.dx;
+      } else if (this.x > cvs.width) {
+          this.x = cvs.width;
+          this.dx = -this.dx;
+      }
+      this.y += this.dy;
+      if (this.y < 0) {
+          this.y = 0;
+          this.dy = -this.dy;
+      } else if (this.y > cvs.height) {
+          this.y = cvs.height;
+          this.dy = -this.dy;
+      }
+  }
+
+  Point.prototype.draw = function () {
+      ctx.fillStyle = this.color;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.fill();
+  }
+
+  var points = [];
+
+  function initPoints(num) {
+      for (var i = 0; i < num; ++i) {
+          points.push(new Point());
+      }
+  }
+
+  var p0 = new Point(); //鼠标
+  p0.dx = p0.dy = 0;
+  var degree = 2.5;
+  document.onmousemove = function (ev) {
+      p0.x = ev.clientX;
+      p0.y = ev.clientY;
+  }
+  document.onmousedown = function (ev) {
+      degree = 5.0;
+      p0.x = ev.clientX;
+      p0.y = ev.clientY;
+  }
+  document.onmouseup = function (ev) {
+      degree = 2.5;
+      p0.x = ev.clientX;
+      p0.y = ev.clientY;
+  }
+  window.onmouseout = function () {
+      p0.x = null;
+      p0.y = null;
+  }
+
+  function drawLine(p1, p2, deg) {
+      var dx = p1.x - p2.x;
+      var dy = p1.y - p2.y;
+      var dis2 = dx * dx + dy * dy;
+      if (dis2 < 2 * LINE_LENGTH) {
+          if (dis2 > LINE_LENGTH) {
+              if (p1 === p0) {
+                  p2.x += dx * 0.03;
+                  p2.y += dy * 0.03;
+              } else return;
+          }
+          var t = (1.05 - dis2 / LINE_LENGTH) * 0.2 * deg;
+          ctx.strokeStyle = "rgba(255,255,255," + t + ")";
+          ctx.beginPath();
+          ctx.lineWidth = 1.5;
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.closePath();
+          ctx.stroke();
+      }
+      return;
+  }
+
+  //绘制每一帧
+  function drawFrame() {
+      cvs.width = window.innerWidth;
+      cvs.height = window.innerHeight;
+      ctx.fillStyle = BACKGROUND_COLOR;
+      ctx.fillRect(0, 0, cvs.width, cvs.height);
+
+      var arr = (p0.x == null ? points : [p0].concat(points));
+      for (var i = 0; i < arr.length; ++i) {
+          for (var j = i + 1; j < arr.length; ++j) {
+              drawLine(arr[i], arr[j], 1.0);
+          }
+          arr[i].draw();
+          arr[i].move();
+      }
+
+      window.requestAnimationFrame(drawFrame);
+  }
+
+  initPoints(POINT_NUM);
+  drawFrame();
+
+  // 时钟
+  var Flipper = /** @class */ (function() {
+    function Flipper(node, currentTime, nextTime) {
+        this.isFlipping = false;
+        this.duration = 600;
+        this.flipNode = node;
+        this.frontNode = node.querySelector(".front");
+        this.backNode = node.querySelector(".back");
+        this.setFrontTime(currentTime);
+        this.setBackTime(nextTime);
+    }
+    Flipper.prototype.setFrontTime = function(time) {
+        this.frontNode.dataset.number = time;
+    };
+    Flipper.prototype.setBackTime = function(time) {
+        this.backNode.dataset.number = time;
+    };
+    Flipper.prototype.flipDown = function(currentTime, nextTime) {
+        var _this =this;
+        if(this.isFlipping) {
+            return false;
+        }
+        this.isFlipping = true;
+        this.setFrontTime(currentTime);
+        this.setBackTime(nextTime);
+        this.flipNode.classList.add("running");
+        setTimeout(function() {
+            _this.flipNode.classList.remove("running");
+            _this.isFlipping = false;
+            _this.setFrontTime(nextTime);
+        }, this.duration);
+    };
+    return Flipper;
+}());
+
+var getTimeFromDate = function(date) {
+    return date
+        .toTimeString()
+        .slice(0, 8)
+        .split(":")
+        .join("");
+};
+
+var flips = document.querySelectorAll(".flip");
+var now = new Date();
+var nowTimeStr = getTimeFromDate(new Date(now.getTime() - 1000));
+var nextTimeStr = getTimeFromDate(now);
+var flippers = Array.from(flips).map(function(flip, i) {return new Flipper(flip, nowTimeStr[i], nextTimeStr[i]);});
+setInterval(function() {
+    var now =new Date();
+    var nowTimeStr = getTimeFromDate(new Date(now.getTime() - 1000));
+    var nextTimeStr = getTimeFromDate(now);
+    for(var i=0; i < flippers.length; i++) {
+        if(nowTimeStr[i] === nextTimeStr[i]) {
+            continue;
+        }
+        flippers[i].flipDown(nowTimeStr[i], nextTimeStr[i]);
+    }
+},1000);
+// 时钟结束
+// 鼠标效果
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+这是一个新的状态管理库，来自一点新的思想。源码地址
+前端届特别喜欢把简单的事情搞复杂。
+本来原生代码就已经可以实现的事情。非要为了当前端网红，造一些复杂的，大而无当的东西。
+
+现在让我们抛弃复杂，心智负担极重的Vuex, Flux, Redux等等等等之类的东西吧。
+单纯的面向对象，已经足以管理状态了，而且更好。
+更少的心智负担，更简单的公共接口。一眼就能看明白。
+
+用法
+下面是一个小Demo
+创建一个Class，这个Class需要继承Vanx类
+拥有两个方法plus和minus，和一个状态：result
+调用plus或者minus就会对result加1或者减1
+
+import Vanx from 'vanx';
+
+class Calcutor extends Vanx {
+  protected result = 0;
+  public plus() {
+    this.result++;
+  }
+  public minus() {
+    this.result--;
+  }
+}
+// 实例化并导出状态管理类
+export const calcutor = new Calcutor();
+然后在Vue文件里
+
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import { calcutor } from './store'; 
+
+@Component
+export default class HelloWorld extends Vue {
+  // 使用刚刚到处的累的一个方法叫decorator，参数是你想注入到Vue里的状态的变量名
+  @calcutor.decorator('result')
+  private calcutorResule!: number;
+  private plus() {
+   // 然后调用状态管理类的方法，
+   // vanx会通知vue去更新Dom
+    calcutor.plus();
+  }
+  private minus() {
+    calcutor.minus();
+  }
+}
+想用着试试看的可以直接
+
+npm install vanx

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 如果是在移动端浏览器，需要设置如下元数据 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>纯HTML+CSS实现响应式导航条</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <!-- 左边图标和logo -->
+        <div class="navbar-left">
+            <a href="">
+                <img src="./img/logo_rocket.png" class="img1">
+            </a>
+            <a href="">
+                <img src="./img/logo_name.png" class="img2">
+            </a>
+        </div>
+        <!-- 导航菜单-->
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="">首页</a>
+            </li>
+            <li class="navbar-item">
+                <a href="">分页</a>
+            </li>
+            <li class="navbar-item">
+                <a href="">新闻动态</a>
+            </li>
+            <li class="navbar-item">
+                <a href="">个人中心</a>
+            </li>
+        </ul>
+        <!-- 搜索框
+        <div class="navbar-search">
+            <input type="text" class="search" placeholder="search">
+            <button class="search-btn">
+                <img src="./img/search.png">
+            </button>
+        </div> -->
+        <!-- 登录注册 -->
+        <div class="navbar-sign">
+            <button>登录</button>
+            <button>注册</button>
+        </div>
+        <!-- 更多按钮 -->
+        <!--小屏幕显示 -->
+        <div class="navbar-morebox">
+            <button class="more-btn">
+                <img src="./img/more.png" alt="">
+            </button>
+        </div>
+    </div>
+    <!-- 手机或平板屏幕显示 -->
+    <ul class="small-list" id="small-list">
+        <li class="small-item">
+            <a href="">首页</a>
+        </li>
+        <li class="small-item">
+            <a href="">分页</a>
+        </li>
+        <li class="small-item">
+            <a href="">新闻动态</a>
+        </li>
+        <li class="small-item">
+            <a href="">个人中心</a>
+        </li>
+        <li class="small-item">
+            <input type="text" class="search" placeholder="search">
+            <button class="search-btn">
+                <img src="./img/search.png">
+            </button>
+        </li>
+        <li class="small-item">
+            <button class="sign">登录</button>
+            <button class="sign">注册</button>
+        </li>
+    </ul>
+</body>
+
+</html>
